@@ -80,15 +80,15 @@ There is also a basic euler-forward solver which I only used in the first stages
 It is possible to evaluate the interface length of a processed sample with the following functions, both returning three vectors with values in nm: interface length, interface start coordinate, interface end coordinate. The tol parameter sets the sensitivity for the interface detection.
 
 ```
-cifeval(sample,tol=1e-3)
-pifeval(sample,tol=1e-3)
+apl104.cifeval(sample,tol=1e-3)
+apl104.pifeval(sample,tol=1e-3)
 ```
 
 The following two functions perform the same task on interface evolution logs (read section "Solving") and similarly return three matrices with time-arranged information on interface length, interface start coordinate, interface end coordinate.
 
 ```
-cifevallog(log,sample,tol=1e-3)
-pifevallog(log,sample,tol=1e-3)
+apl104.cifevallog(log,sample,tol=1e-3)
+apl104.pifevallog(log,sample,tol=1e-3)
 ```
 
 ## Plotting
